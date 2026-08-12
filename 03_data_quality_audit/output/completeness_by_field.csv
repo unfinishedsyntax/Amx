@@ -1,0 +1,10 @@
+field,n_missing,pct_missing
+customer_id,0,0.0
+name,0,0.0
+email,485,5.95
+account_open_date,0,0.0
+credit_limit,163,2.0
+state,793,9.73
+phone_number,326,4.0
+current_balance,242,2.97
+fico_score,409,5.02

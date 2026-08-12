@@ -1,0 +1,71 @@
+{
+  "dataset": "customer_accounts_raw.csv",
+  "n_rows": 8150,
+  "n_columns": 9,
+  "overall_data_quality_score": 94.6,
+  "rows_flagged_with_any_issue": 1340,
+  "pct_rows_flagged": 16.44,
+  "rows_clean": 6810,
+  "completeness": [
+    {
+      "field": "customer_id",
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    {
+      "field": "name",
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    {
+      "field": "email",
+      "n_missing": 485,
+      "pct_missing": 5.95
+    },
+    {
+      "field": "account_open_date",
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    {
+      "field": "credit_limit",
+      "n_missing": 163,
+      "pct_missing": 2.0
+    },
+    {
+      "field": "state",
+      "n_missing": 793,
+      "pct_missing": 9.73
+    },
+    {
+      "field": "phone_number",
+      "n_missing": 326,
+      "pct_missing": 4.0
+    },
+    {
+      "field": "current_balance",
+      "n_missing": 242,
+      "pct_missing": 2.97
+    },
+    {
+      "field": "fico_score",
+      "n_missing": 409,
+      "pct_missing": 5.02
+    }
+  ],
+  "uniqueness": {
+    "duplicate_full_rows": 3,
+    "duplicate_customer_ids": 150,
+    "pct_duplicate_ids": 1.84
+  },
+  "validity": {
+    "invalid_email_format": 60,
+    "fico_out_of_range": 91,
+    "balance_extreme_outlier": 28,
+    "future_account_open_date": 15
+  },
+  "consistency": {
+    "state_non_standard_values": 1232,
+    "distinct_raw_state_values": 8
+  }
+}

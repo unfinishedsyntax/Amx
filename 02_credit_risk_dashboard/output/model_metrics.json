@@ -1,0 +1,55 @@
+{
+  "test_auc": 0.6476,
+  "n_train": 15000,
+  "n_test": 5000,
+  "top_drivers": [
+    {
+      "feature": "credit_score",
+      "coefficient": -0.3628
+    },
+    {
+      "feature": "annual_income",
+      "coefficient": -0.2332
+    },
+    {
+      "feature": "dti_ratio",
+      "coefficient": 0.1797
+    },
+    {
+      "feature": "revolving_utilization_pct",
+      "coefficient": 0.1771
+    },
+    {
+      "feature": "employment_years",
+      "coefficient": -0.1299
+    },
+    {
+      "feature": "delinq_2yrs",
+      "coefficient": 0.0536
+    },
+    {
+      "feature": "purpose_debt_consolidation",
+      "coefficient": 0.0506
+    },
+    {
+      "feature": "origination_year",
+      "coefficient": 0.0365
+    },
+    {
+      "feature": "purpose_home_improvement",
+      "coefficient": 0.0349
+    },
+    {
+      "feature": "region_South",
+      "coefficient": 0.0322
+    },
+    {
+      "feature": "purpose_medical",
+      "coefficient": 0.0314
+    },
+    {
+      "feature": "open_accounts",
+      "coefficient": 0.0286
+    }
+  ]
+}
