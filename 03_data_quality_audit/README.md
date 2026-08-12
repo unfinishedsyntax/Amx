@@ -39,9 +39,3 @@ python src/generate_messy_data.py
 python src/data_quality_audit.py
 ```
 
-## Resume bullet
-> Built an automated data quality audit pipeline (Python + SQL) profiling
-> completeness, uniqueness, validity, and consistency across an 8K-record
-> dataset; surfaced a composite DQ score (94.6/100) and flagged 16% of rows
-> for downstream remediation instead of silently dropping them — reducing
-> manual data review effort.
