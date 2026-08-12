@@ -37,12 +37,6 @@ python src/build_dashboard.py
 Open `output/Credit_Risk_Dashboard.xlsx` in Excel — all formulas recalculate
 live.
 
-## Resume bullet
-> Built a credit risk scoring pipeline (SQL + Python + Excel) on a 20,000-loan
-> portfolio: wrote SQL to segment exposure and default rate across risk grade,
-> region, and vintage; trained a logistic regression default-probability
-> model; delivered a live Excel dashboard with formula-driven KPIs and charts
-> for portfolio monitoring.
 
 ## Note on Power BI / Tableau
 This deliverable uses Excel (per the JD's tool list) since it doesn't require
