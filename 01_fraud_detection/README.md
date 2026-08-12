@@ -38,12 +38,6 @@ python src/generate_data.py
 python src/train_model.py
 ```
 
-## Resume bullet
-> Built a fraud detection classifier on 50K+ synthetic transactions using
-> Gradient Boosting, achieving 94.4% recall and 88.6% precision (F1: 0.91,
-> ROC-AUC: 0.999); addressed severe class imbalance (1.7% fraud rate) via a
-> custom SMOTE implementation, avoiding train/test leakage.
-
 ## To adapt with real data
 Swap `data/transactions.csv` for a public dataset such as Kaggle's
 [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud)
