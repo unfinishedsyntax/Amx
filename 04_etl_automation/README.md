@@ -38,8 +38,3 @@ Run `daily_report_etl.py` again after dropping new files into
 `data/incoming/` — it only processes what's currently there and archives it
 afterward.
 
-## Resume bullet
-> Built an automated ETL pipeline (Python) that ingests daily transaction
-> file drops, cleans and standardizes ~3K records, and generates a formatted
-> Excel report with charts — replacing a manual download-and-reformat
-> process and making the report safe to run unattended on a schedule.
