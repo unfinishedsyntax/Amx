@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.DS_Store
+.ipynb_checkpoints/
+*.log
+
+# Generated project outputs
+output/*.png
+output/*.csv
+output/*.json
+output/*.xlsx

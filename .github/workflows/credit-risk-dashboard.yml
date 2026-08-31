@@ -1,0 +1,51 @@
+name: Credit Risk Dashboard CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        working-directory: ./02_credit_risk_dashboard
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Generate portfolio data
+        working-directory: ./02_credit_risk_dashboard
+        run: python src/generate_data.py
+
+      - name: Train risk model
+        working-directory: ./02_credit_risk_dashboard
+        run: python src/train_risk_model.py
+
+      - name: Build Excel dashboard
+        working-directory: ./02_credit_risk_dashboard
+        run: python src/build_dashboard.py
+
+      - name: Upload dashboard artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: credit-risk-dashboard-${{ matrix.python-version }}
+          path: |
+            02_credit_risk_dashboard/output/Credit_Risk_Dashboard.xlsx
+            02_credit_risk_dashboard/output/scored_portfolio.csv
+            02_credit_risk_dashboard/output/model_metrics.json
+            02_credit_risk_dashboard/output/roc_curve.png
